@@ -1,0 +1,442 @@
+:root {
+    --bojaSvetloSiva: #e5e5e5;
+    --bojaTamnoPlava: #023296;
+    --bojaBela:#fefefe;
+    --bojaNarandzasta: #ed7325;
+    --bojaSvetloNarandzasta: #f4a371;
+    --bojaSivaDetalji:#b49b9b;
+    /*--bojaTamnijaCrvena: #cc2944;*/
+}
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    font-size: 16px;
+}
+
+.GlavniOmotacModalnogProzora{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    z-index: 1001;
+}
+
+.KontejnerModalnogProzora,.KontejnerModalnogProzoraZaSnimanjeFiltera, .KontejnerModalnogProzoraRaspoloziviSetFiltera{
+    display: flex;
+    flex-direction: column;
+    height: 430px;
+    width: 450px;  
+    margin-top: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: white;
+    border:1px solid black;
+}
+
+.ZaglavljeModalnogProzora{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid black;
+    background-color: var(--bojaSivaDetalji);
+
+}
+
+.NaslovModalnogProzora{
+    display: flex;
+    flex: 1;
+    margin-left: 10px;
+    color: white;    
+}
+
+#btnZatvoriModalniProzor, #btnZatvoriModalniProzorSnimanjaSetaFiltera, #btnZatvoriModalniProzorRaspolozivogSeta{
+    display: flex;
+    height: 30px;
+    width: 30px;
+    flex-basis: 30px;
+    flex-shrink: 0;
+    color: white;
+    justify-content: center;
+    align-items: center;
+    margin-right: 10px;
+}
+
+.TeloModalnogProzora{
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    margin: 15px 15px;
+}
+
+.TeloModalnogProzora p{
+    font-size: 12px;
+    color: black;
+    text-align: justify; 
+    margin-left: 10px;
+    margin-bottom: 0;
+}
+
+.DivTabulatori{
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    height: 200px;
+}
+
+.DivTabulatori .NaziviTabova{
+    display: flex;
+    height: 40px;    
+}
+
+.DivTabulatori .NaziviTabova p {
+    display: flex;
+    align-items: center;
+    border: 1px solid gray;
+    margin-right: -7px;
+    width: 80px;
+    justify-content: center;
+    margin-bottom: 1px;
+    transition: 0.2s;
+}
+
+.NaziviTabova p:hover{
+    background-color: #ddd;
+    border:1px solid black !important;
+    border-bottom: none;
+}
+
+
+.SadrzajTaba{
+    width: 400px;
+    height: auto;
+    border:1px solid gray;
+    margin-top: 0;
+    height: 150px;
+    margin-left: 10px; 
+    overflow: auto;   
+}
+
+.PodnozjeModalnogProzora {
+    display: flex;
+    width: 100%;    
+    justify-content: center;
+    align-items: center;
+}
+
+#btnOK{    
+    width: 100px;
+    height: 25px;  
+    border:1px solid black;    
+    background-color: blue;
+    margin-top: 20px;
+    color: white;
+}
+
+.Oznaceno{
+    border:1px solid black !important;
+    font-weight: bold;    
+    background-color: #ccc;
+}
+
+/*******snimanje seta filtera********/
+
+
+.KontejnerModalnogProzoraZaSnimanjeFiltera{    
+    height: auto; 
+}
+
+.KontejnerModalnogProzoraZaSnimanjeFiltera .ZaglavljeModalnogProzora, .KontejnerModalnogProzoraRaspoloziviSetFiltera .ZaglavljeModalnogProzora{
+    height: 30px;
+
+}
+
+.TeloModalnogProzoraSnimanjaSetaFiltera{
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    margin: 15px 15px;
+}
+
+.TeloModalnogProzoraSnimanjaSetaFiltera div:first-child{ 
+    color: black;
+    text-align: justify;  
+    margin-bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;  
+}
+
+#btnIzbrisiImeSetaKriterijuma{
+    margin-left: -18px;
+}
+
+#txtNazivSetaKriterijuma{
+    width: 245px;
+}
+
+.Kriterijumi{
+    display: flex;
+    flex-direction: column;
+}
+
+.Kriterijumi > p{
+    font-weight: bold;
+    margin-bottom:0;
+}
+
+.Kriterijumi label{
+    color: gray;
+}
+
+.PodnozjeModalnogProzoraSnimanjaSetaFiltera{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#btnSnimi, #btnOdustani{
+    background-color: var(--bojaNarandzasta);
+    margin-right: 20px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10px;
+    width: 100px;
+    height: 30px;
+}
+
+/*predefinisani set filtera*/
+
+.KontejnerModalnogProzoraRaspoloziviSetFiltera{    
+    height: auto;    
+}
+
+.TeloModalnogProzoraRaspolozivogSetaFiltera{
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    margin: 15px 15px;
+    align-content: center;
+}
+
+.TeloModalnogProzoraRaspolozivogSetaFiltera div p:first-child{ 
+    width: 100px;
+
+}
+
+
+.TeloModalnogProzoraRaspolozivogSetaFiltera .rbPrimeni,.TeloModalnogProzoraRaspolozivogSetaFiltera .rbObrisi{
+    width: 95px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 25px;
+    border: none;
+    margin-right: -30px;
+}
+
+.TeloModalnogProzoraRaspolozivogSetaFiltera div{ 
+    color: black;
+    text-align: justify;  
+    margin-bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    border-bottom: 1px solid gray;
+}
+
+.Ikonica{
+    width: 30px;
+    height: 30px;
+    border-radius: 25px; 
+    border:1px solid black;
+}
+
+.Ikonica div{
+    width: 12px;
+    height: 12px;
+    border: none;
+}
+
+.rbPrimeni p, .rbObrisi p{
+    margin-left: 10px;
+    font-size: 12px;
+}
+
+.KontejnerModalnogProzoraRaspoloziviSetFiltera .PodnozjeModalnogProzora{
+    justify-content: space-evenly;
+}
+
+#btnPrimeniFilter, #btnOdustaniOdIzbora{
+    background-color: var(--bojaNarandzasta);
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 40px;
+    margin-bottom: 30px;
+    width: 100px;
+    height: 30px;  
+}
+
+
+.rbPrimeni.Obelezeno .Ikonica div{
+    background-image: url("../svg ikone/010-tick.svg");  
+    background-size:cover;
+}
+
+.rbObrisi.Obelezeno .Ikonica div{
+    background-image: url("../svg ikone/005-cancel.svg"); 
+    background-size:cover;
+}
+
+
+/*sigurnosno pitanje pri brisanju*/
+#KontejnerSigurnosnoPitanje{
+    position: fixed;
+    background-color: #8080804d; 
+    width: 100%;
+    height: 100%;
+    top:0px;
+
+}
+
+.ProzorSigurnosnoPitanje{
+    display: flex;
+    flex-direction: column;
+    height: 150px;
+    width: 420px; 
+    background-color: white;
+    margin: auto;
+    margin-top: 15%;
+}
+
+.PitanjeTekstIkonica{
+    width: 100%;
+    height: 60px;
+    display: flex;
+    background-color: orange;
+    align-items: center;
+    font-size: 16px;
+}
+
+.Pitanje{
+    display: flex;
+    flex: 1;
+    margin-left: 10px;
+    color: black;    
+}
+
+#btnZatvoriModalniProzorSigurnosnoPitanje{
+    display: flex;    
+    flex-basis: 50px;
+    flex-shrink: 0;
+    color: white;
+    justify-content: center;
+    align-items: center;
+}
+
+.ButtonsIzbori{
+    display: flex;
+    width: 100%;      
+    margin-bottom: 0;
+    margin: auto;   
+    justify-content: center;    
+}
+
+#btnPotvrdiBrisanje, #btnOdustaniOdBrisanja{
+    width: 80px;
+    height: 45px;
+    margin:10px;
+}
+
+.KontejnerModalnogProzoraRecentSearches{
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    width: 450px;  
+    margin-top: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: white;
+    border:1px solid black;
+}
+
+.KontejnerModalnogProzoraRecentSearches .ZaglavljeModalnogProzora{
+    width: 100%;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid black;
+    background-color: var(--bojaSivaDetalji);
+}
+
+.KontejnerModalnogProzoraRecentSearches .NaslovModalnogProzora{
+    display: flex;
+    flex: 1;
+    margin-left: 10px;
+    color: white;    
+}
+
+#btnZatvoriModalniProzorRecentSearches{
+    display: flex;
+    height: 30px;
+    width: 30px;
+    flex-basis: 30px;
+    flex-shrink: 0;
+    color: white;
+    justify-content: center;
+    align-items: center;
+    margin-left: -10px;
+}
+
+.TeloModalnogProzoraRecentSearches{
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    margin: 5px 5px;
+}
+
+.RecentFilter { 
+    color: black;
+    text-align: justify;  
+    margin-bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    border-bottom: 1px solid gray;
+    height: auto;
+}
+
+.RecentFilter p:first-child{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 200px;
+    margin-left: 10px;
+}
+
+.BtnPrimeni {
+    display: flex;
+    width: 90px;
+    height: 30px;
+    border: 1px solid black;
+    background-color: var(--bojaSivaDetalji);
+    align-items: center;
+    justify-content: center;
+}
+
+.BtnPrimeni img{
+    margin-right: 10px;
+}

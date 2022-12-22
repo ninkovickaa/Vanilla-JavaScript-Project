@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Samostalni projekat</title>        
+        <link href="styles/stylePocetno.css" rel="stylesheet" type="text/css"/>
+        <link href="styles/styleStavkaKlijent.css" rel="stylesheet" type="text/css"/>
+        <link href="styles/styleModalniProzori.css" rel="stylesheet" type="text/css"/>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>        
+        <div class="GlavniOmotacModalnogProzora Sakrij">
+            <div class="KontejnerModalnogProzora Sakrij">
+                <div class="ZaglavljeModalnogProzora">
+                    <div class="NaslovModalnogProzora">
+                        <p>ID klijenta: Ime i prezime</p>
+                    </div>
+                    <div id="btnZatvoriModalniProzor">
+                        X
+                    </div>    
+                </div>             
+
+                <div class="TeloModalnogProzora">
+                    <p>ID mesta i adresa: <label>xxx</label></p>
+                    <p>Darum rodjenja: <label>xxx</label></p>
+                    <p>ID drzavljanstva: <label>xxx</label></p>
+                    <div class="DivTabulatori">
+                        <div class="NaziviTabova">
+                            <p id="tabZaposlenje">Zaposlenje</p>
+                            <p id="tabRacuni">Racuni<span>xxx</span></p>
+                            <p id="tabKartice">Kartice<span>xxx</span></p>
+                        </div>
+                        <div class="SadrzajTaba">                            
+                        </div>
+                    </div>
+                </div>
+
+                <div class="PodnozjeModalnogProzoraSnimanjaSetaFiltera">
+                    <button id="btnOK">OK</button>
+                </div>
+            </div>
+            <div class="KontejnerModalnogProzoraZaSnimanjeFiltera Sakrij">
+                <div class="ZaglavljeModalnogProzora">
+                    <div class="NaslovModalnogProzora">
+                        <p>Snimanje seta filtera</p>
+                    </div>
+                    <div id="btnZatvoriModalniProzorSnimanjaSetaFiltera">
+                        <img src="svg ikone/Zatvori.svg" alt="alt" width="10" height="10"/>
+                    </div>    
+                </div>             
+
+                <div class="TeloModalnogProzoraSnimanjaSetaFiltera">
+                    <div>
+                        <p>Ime seta kriterijuma: <input id="txtNazivSetaKriterijuma" type="text" name="name"></p>
+                        <div id="btnIzbrisiImeSetaKriterijuma">X</div>
+                    </div>
+                    <div class="Kriterijumi">
+                        <p>Kriterijumi</p>
+                        <div>
+                            <!-- comment 
+                            <p>Ime, prezime: <label> xxx</label></p>
+                            <p>Godina rodjenja: <label> xxx</label></p>
+                            <p>Dug</p>-->
+                        </div>
+                    </div>               
+                </div>
+                <div class="PodnozjeModalnogProzoraSnimanjaSetaFiltera">
+                    <button id="btnOdustani">Odustani</button>
+                    <button id="btnSnimi">Snimi</button>
+                </div>
+            </div>          
+            <div class="KontejnerModalnogProzoraRaspoloziviSetFiltera Sakrij">
+                <div class="ZaglavljeModalnogProzora">
+                    <div class="NaslovModalnogProzora">
+                        <p>Raspolozivi set filtera</p>
+                    </div>
+                    <div id="btnZatvoriModalniProzorRaspolozivogSeta">
+                        X
+                    </div>    
+                </div>             
+
+                <div class="TeloModalnogProzoraRaspolozivogSetaFiltera">
+                    <!-- comment 
+                    <div class="RaspolozivFilter">
+                        <p>Naziv 1</p>
+                        <div class="rbPrimeni Obelezeno">
+                            <div class="Ikonica">
+                                <div></div>
+                            </div>
+                            <p>Primeni</p>
+                        </div>
+                        <div class="rbObrisi Obelezeno">
+                            <div class="Ikonica">
+                                <div></div>
+                            </div>
+                            <p>Obrisi</p>
+                        </div>
+                    </div>                    
+                    </div>-->
+
+                </div>
+                <div class="PodnozjeModalnogProzora">
+                    <button id="btnPrimeniFilter">Izvrsi</button>           
+                    <button id="btnOdustaniOdIzbora">Odustani</button>             
+                </div>
+            </div>            
+            <div id="KontejnerSigurnosnoPitanje" class="Sakrij">
+                <div class="ProzorSigurnosnoPitanje">
+                    <div class="PitanjeTekstIkonica">
+                        <div class="Pitanje">
+                            <p>Da li ste sigurni?</p>
+                        </div>
+                        <div id="btnZatvoriModalniProzorSigurnosnoPitanje">
+                            X
+                        </div>
+                    </div>
+
+                    <div class="ButtonsIzbori">
+                        <button id="btnPotvrdiBrisanje">Da</button>
+                        <button id="btnOdustaniOdBrisanja">Ne</button>
+                    </div>
+                </div>
+            </div>
+            <div class="KontejnerModalnogProzoraRecentSearches Sakrij">
+                <div class="ZaglavljeModalnogProzora">
+                    <div class="NaslovModalnogProzora">
+                        <p>Recent searches</p>
+                    </div>
+                    <div id="btnZatvoriModalniProzorRecentSearches">
+                        X
+                    </div>    
+                </div>             
+
+                <div class="TeloModalnogProzoraRecentSearches">
+                    <div class="RecentFilter">
+                        <p>Naziv 1</p>
+                        <div class="BtnPrimeni">
+                            <img src="svg ikone/011-checked.svg" width="15" height="15" alt="alt"/>
+                            <p>Primeni</p>
+                        </div>                      
+
+                    </div>
+
+
+                </div>            
+            </div>
+        </div>       
+
+        <div class="KontejnerKriterijumaZaPretragu">
+            <div class="PrviRedKriterijuma">
+                <div>
+                    <img src="svg ikone/013-filter-1.svg" width="50" height="50" alt=""/>
+                </div>
+                <div class="DivImePrezimeKriterijum">
+                    <p>Ime, prezime</p>
+                    <div class="DivInput">
+                        <input type="text" id="txtImePrezime">
+                        <img id="btnBrisiImePrezime" src="svg ikone/005-cancel.svg" width="10" height="10" alt=""/>
+                    </div>
+                </div>
+                <div class="RazdvojnaLinija">                    
+                </div>
+                <div class="DivGodinaRodjenja">
+                    <p>Godina rodjenja</p>
+
+                    <div class="InputiZaGodinuRodjenja">
+                        <!-- Godina rodjnja od -->
+                        <p>Od</p>
+                        <input type="text" id="txtGodinaRodjenjaOd">
+                        <img id="btnBrisiGodinuRodjenjaOd" src="svg ikone/005-cancel.svg" width="10" height="10" alt=""/>
+
+                        <!-- Godina rodjnja do -->
+                        <p>Do</p>
+                        <input type="text" id="txtGodinaRodjenjaDo">
+                        <img id="btnBrisiGodinuRodjenjaDo" src="svg ikone/005-cancel.svg" width="10" height="10" alt=""/>
+
+                    </div>
+                </div>
+                <div class="RazdvojnaLinija">                    
+                </div>
+                <!-- comment 
+                <div class="DivBrendKartice">
+                    <p>Brend kartice</p>
+                    <div class="DivInput">
+                        <input type="text" id="txtBrendKartice">
+                        <img id="btnOvaranjeListe" src="svg ikone/064-down-arrow.svg" width="15" height="15" alt=""/>
+                        <img id="btnObrisiBrend" src="svg ikone/005-cancel.svg" width="10" height="10" alt=""/>
+                    </div>                    
+
+                </div>-->
+                <div class="DivBrendKartice">
+                    <p>Brend kartice</p>
+                    <div class="PadajucaLista SakrijStavke">
+                        <div id="DivInput">
+                            <input type="text" id="txtBrendKartice">
+                            <img id="btnOvaranjeListe" src="svg ikone/064-down-arrow.svg" width="15" height="15" alt=""/>
+                            <img id="btnObrisiBrend" src="svg ikone/005-cancel.svg" width="10" height="10" alt=""/>
+                        </div>
+                        <div id="BrendoviKartice">
+                            <!-- comment 
+                            <span>Visa</span>
+                            <span>MasterCard</span>
+                            <span>AAD</span>-->
+                        </div>
+                    </div>                     
+
+                </div>
+            </div>
+            <div class="DrugiRedKriterijuma">
+                <div></div>
+                <div class="DivPrikaziDodatniFilter">
+                    <img id="btnPrikaziDodatneFiltere" src="svg ikone/043-add.svg" width="20" height="20" alt=""/>
+                    <p>Prikazi dodatne filtere</p>
+                </div>                
+            </div>
+            <div class="TreciRedKriterijum_Dodatno">
+                <div></div>
+                <div class="KontejnerDuguje Sakrij">
+                    <p>Dug</p>
+                    <div class="BoxCheckBoxeviDuguje">
+                        <div>
+                            <input type="checkbox" id="chkKlijentiBezDuga" name="klijentiBezDuga">
+                            <p> Klijenti bez duga</p>
+                        </div>
+                        <div>
+                            <input type="checkbox" id="chkKlijentiKojiDuguju" name="klijentiKojiDuguju">
+                            <p> Klijenti koji duguju iznos veci od <input id="txtIznosDuga" type="text"></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="KontejnerVazenjeKartice Sakrij"> 
+                    <p>Vazenje kartice</p>
+                    <div class="BoxCheckBoxPeriodVazenjeKartice">
+                        <input type="checkbox" id="chkPeriodVazenjaKartice" name="klijentiKojiDuguju">
+                        <p> Kartica vazi jos najmanje <input id="txtPeriodVazenjaKartice" type="text"> meseci</p>
+                    </div>
+                </div>
+            </div>
+            <div class="CetvrtiRedKriterijum_SakrijDodatneFiltere">
+                <div></div>
+                <div class="DivPrikaziSakrijDodatneFiltere Sakrij">
+                    <img src="svg ikone/007-forbidden.svg" width="20" height="20" alt=""/>
+                    <p>Sakrij dodatne filtere</p>
+                </div> 
+
+            </div><!-- comment -->
+            <div class="PetiRedButtoni">
+                <div>
+                    <div id="btnSnimiSetFiltera" class="Sakrij">
+                        <img src="svg ikone/003-diskette-1.svg" width="20" height="20" alt=""/>
+                        <p>Snimi set filtera</p>   
+                    </div>
+                    <div id="btnPretrazi">
+                        <img src="svg ikone/031-loupe.svg" width="20" height="20" alt=""/>
+                        <p>Pretrazi</p>   
+                    </div>
+                    <div id="btnBrisiFiltere">
+                        <img src="svg ikone/022-clear-filter.svg" width="20" height="20" alt=""/>
+                        <p>Brisi filtere</p>   
+                    </div>
+                    <div id="btnPredefinisaniSetoviFiltera">
+                        <img src="svg ikone/039-list-text.svg" width="20" height="20" alt=""/>
+                        <p>Predefinisani setovi filtera</p>   
+                    </div>
+                    <div id="btnRecentSearces">
+                        <img src="svg ikone/034-archive.svg" width="20" height="20" alt=""/>
+                        <p>Recent searches</p>   
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="SnackBarWindow">
+            <div id="snackBar" class="Sakrij">
+                <!-- ikonica -->
+                <div class="IkonicaGreska"></div>
+                <!-- tekst -->
+                <p class="TekstGreske">Greska</p>
+                <!-- iks -->
+                <img id="iksIzSnacka" src="svg ikone/Zatvori.svg" alt="" height="12" width="12">
+            </div>
+        </div>
+        <!--<!-- lista rezultata pretrazivanja-stavke klijenta -->
+        <div class="ListaKlijenata">
+            <!-- comment 
+            <div class="StavkaKlijent">
+                <div class="KlijentOsnovneInformacije">
+                    <div>
+                        <img src="svg ikone/client.png" alt="">  
+                    </div>
+                    <div class="ImePrezime">
+                        <p>Id: <label>3</label></p>
+                        <p>Prezime:</p>
+                        <p>Jankovic</p>
+                        <p>Ime:</p>
+                        <p>Janko</p>                    
+                    </div>
+                </div>
+
+                <div class="KlijentPodaci">
+                    <p><span>Datum rodjenja:</span> 
+                        <span>25.07.1995</span>
+                    </p>
+                    <p><span>Stanje na racunima:</span> 
+                        <span>komercijala</span>
+                    </p>
+                </div>
+                <button id="btnDetaljnije">Detaljnije</button>          
+
+
+            </div>-->
+        </div>       
+
+
+        <script src="scripts/klijenti.js" type="text/javascript"></script>
+        <script src="scripts/script.js" type="text/javascript"></script>
+    </body>
+</html>

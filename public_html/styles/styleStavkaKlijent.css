@@ -1,0 +1,120 @@
+:root{
+    --bojaNarandzasta: #ed7325;
+    --bojaBordo:#962e23;
+    --bojaSvetloNarandzasta: #f4a371;
+    --bojaSvetloZelena: #a8e068;
+    --bojaSvetloSiva:#4e050578;   
+    --bojaTamnoBorda:#bd1616cc;
+}
+
+.ListaKlijenata{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: white;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+.StavkaKlijent{
+    display: flex;
+    width: 300px;    
+    background-color: var(--bojaSvetloNarandzasta);
+    flex-direction: column;
+    padding: 10px;
+    align-items: center; 
+    margin: 10px;
+    transition: all .3s;
+}
+
+.KlijentOsnovneInformacije{
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+.KlijentOsnovneInformacije div:first-child{
+    background-color: var(--bojaNarandzasta);
+    border: 1px solid white;
+}
+
+.KlijentOsnovneInformacije img{    
+    height: 100px;
+    width: 100px;
+    flex-basis: 100px;
+    flex-shrink: 0;
+}
+
+.KlijentOsnovneInformacije p{
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.ImePrezime{
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    margin-left: 10px;
+
+}
+
+.ImePrezime p{
+    margin: 0;
+}
+
+.ImePrezime p:first-child{
+    margin-top:10px;
+}
+
+.ImePrezime p:nth-child(even){
+    margin-top: 10px;  
+}
+
+.ImePrezime p:nth-child(odd){
+    color: white;    
+}
+
+.ImePrezime:nth-child(2){
+    margin-bottom: 10px;
+}
+
+.KlijentPodaci{
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    padding: 10px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.KlijentPodaci p{
+    margin: 0;
+}
+
+.KlijentPodaci p:first-of-type{
+    margin-bottom: 10px;
+}
+
+.KlijentPodaci p span:first-of-type{
+    color: gray;
+
+}
+
+.KlijentPodaci p span:last-of-type{
+    color: black;
+}
+
+.BlokiranRacun{
+    background-color: var(--bojaSvetloSiva);
+    border:5px solid black;
+}
+
+.RacunUMinusu{
+    background-color: var(--bojaTamnoBorda);
+}
+
+.RacunNulaPozitivan{
+    background-color: var(--bojaSvetloZelena);
+}

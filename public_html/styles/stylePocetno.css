@@ -1,0 +1,434 @@
+:root {
+    --bojaSvetloSiva: #e5e5e5;
+    --bojaTamnoPlava: #023296;
+    --bojaBela:#fefefe;
+    --bojaNarandzasta: #ed7325;
+    --bojaSvetloNarandzasta: #f4a371;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    font-size: 16px;
+}
+
+.KontejnerKriterijumaZaPretragu{
+    width: 100%;
+    height: auto;
+    background-color: var(--bojaSvetloNarandzasta);
+    display: flex;
+    flex-direction: column;
+}
+
+.PrviRedKriterijuma,.DrugiRedKriterijuma, .TreciRedKriterijuma_Dodatno, .CetvrtiRedKriterijum_SakrijDodatneFiltere{
+    display: flex;  
+    align-items: center;    
+}
+
+.PrviRedKriterijuma div:nth-child(1){
+    width: 50px;
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-right: 40px;
+}
+
+.DivImePrezimeKriterijum{
+    display: flex;
+    flex-direction: column;
+}
+
+.DivInput{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.DivInput img{
+    flex-basis: 15px;
+    flex-shrink: 0;
+    margin-left: -25px;
+}
+
+.DivInput input{
+    flex:1;
+}
+
+.RazdvojnaLinija{
+    border-left: 1px solid gray;
+    width: 50px;
+    height: 75px;
+    margin-left: 40px;
+    margin-top: 15px;
+}
+
+.DivGodinaRodjenja{
+    display: flex;
+    flex-direction: column;
+}
+
+.InputiZaGodinuRodjenja{
+    display: flex;
+    align-items: center;  
+}
+
+.InputiZaGodinuRodjenja input{
+    margin-left: 10px;
+    width: 70px;
+}
+
+.InputiZaGodinuRodjenja img {
+    margin-left: -15px;
+}
+
+#txtGodinaRodjenjaOd ~  p{
+    margin-left: 50px;
+}
+
+#txtBrendKartice{
+    width: 250px;
+}
+
+#btnObrisiBrend{
+    margin-left: -35px;
+}
+
+.InputiZaGodinuRodjenja p{
+    margin: 0;
+}
+
+.DrugiRedKriterijuma div:nth-child(1), .TreciRedKriterijum_Dodatno div:nth-child(1), .CetvrtiRedKriterijum_SakrijDodatneFiltere div:nth-child(1){
+    width: 50px;
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-right: 40px;
+}
+
+
+.DivPrikaziDodatniFilter, .DivPrikaziSakrijDodatneFiltere {
+    display: flex;    
+    align-items: center;
+    margin-top: 20px;
+}
+
+.DivPrikaziDodatniFilter p, .DivPrikaziSakrijDodatneFiltere p {
+    text-decoration: underline;
+    margin-left: 10px;
+}
+
+.KontejnerDuguje{
+    display: flex;
+    flex-direction: column;
+}
+
+.BoxCheckBoxeviDuguje,.BoxCheckBoxPeriodVazenjeKartice {
+    background-color: var(--bojaBela);
+    width: 480px;
+    height: 100px;
+    border: 2px solid gray;
+}
+
+.BoxCheckBoxeviDuguje div:nth-child(1),.BoxCheckBoxeviDuguje div:nth-child(2){
+    display: flex;
+    width: 100%;
+    align-items: center;   
+    margin-top: 0;
+    margin-bottom: -15px;
+    margin-left: 10px;
+}
+
+.BoxCheckBoxeviDuguje div:nth-child(1) p,.BoxCheckBoxeviDuguje div:nth-child(2) p, .BoxCheckBoxeviDuguje div:nth-child(1) p{
+    margin-left: 10px;
+}
+
+
+.BoxCheckBoxPeriodVazenjeKartice{
+    display: flex;
+    align-items: center;
+    height: 50px;
+    width:400px;
+}
+
+.BoxCheckBoxPeriodVazenjeKartice input{
+    width: 70px;     
+}
+
+.TreciRedKriterijum_Dodatno{   
+    display: flex;  
+    margin-top: 0;  
+}
+
+
+.KontejnerVazenjeKartice{
+    margin-left: 200px;
+}
+
+.BoxCheckBoxPeriodVazenjeKartice input~p{
+
+    margin-left: -20px;
+}
+
+#chkPeriodVazenjaKartice{
+    margin-left: -10px;
+}
+
+.PetiRedButtoni div{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin-bottom: 15px;
+    margin-top: 10px;
+}
+
+#btnPretrazi, #btnBrisiFiltere, #btnPredefinisaniSetoviFiltera, #btnSnimiSetFiltera, #btnRecentSearces{
+    background-color: var(--bojaNarandzasta);
+    margin-right: 20px;
+    border-radius: 5px;
+}
+
+#btnPretrazi img, #btnBrisiFiltere img, #btnPredefinisaniSetoviFiltera img, #btnSnimiSetFiltera img, #btnRecentSearces img{
+    flex-basis: 15px;
+    flex-shrink: 0;
+    margin-left: 10px;
+}
+
+#btnPretrazi p, #btnBrisiFiltere p, #btnPredefinisaniSetoviFiltera p,#btnSnimiSetFiltera p, #btnRecentSearces p{
+    flex:1;
+    margin-left: 10px;
+    color: white;
+}
+
+#btnSnimiSetFiltera{
+    width: 180px;
+}
+
+#btnPretrazi{
+    width: 110px;
+}
+
+#btnBrisiFiltere{
+    width: 130px;
+}
+
+#btnPredefinisaniSetoviFiltera{
+    width: 250px;
+}
+
+#btnRecentSearces{
+    width: 200px;
+}
+
+.Sakrij{
+    display: none !important;
+}
+
+/*********/
+.DivBrendKartice{
+    display: flex;
+    flex-direction: column;
+}
+
+.PadajucaLista {
+    display: flex;
+    flex-direction: column;
+    width: 250px;
+    height: 20px;    
+}
+
+.SakrijStavke {
+    overflow: hidden !important;
+}
+
+#DivInput {
+    display: flex;
+    align-items: center;
+    height: 20px;
+    margin: 0px;
+    width: 200px;
+}
+
+#btnOvaranjeListe, #btnObrisiBrend{
+    flex-basis: 15px;
+    flex-shrink: 0;
+}
+
+#btnOvaranjeListe{
+    margin-left: -20px;
+    transition: all .3s;
+}
+
+.OtvorenaLista{
+    transform: rotate(180deg);
+}
+
+#btnObrisiBrend{
+    margin-left: -35px;
+}
+
+#DivInput input{
+    flex:1;
+    height: 20px;
+    width: 400px;
+}
+
+#BrendoviKartice {
+    display: flex;
+    flex-direction: column;
+    border:1px solid black;
+    z-index: 100;
+    height: auto;
+    margin-top: 2px;
+    width: 225px;
+    background-color: white;
+}
+#BrendoviKartice span {
+    display: flex;
+    padding: 2px;
+    border-bottom: 1px solid black;
+    width: 100%;
+}
+
+#BrendoviKartice span:hover {
+    background-color: var(--bojaNarandzasta);
+}
+
+#BrendoviKartice span span{
+    border:none;
+}
+
+.SakrijStavke {
+    overflow: hidden !important;
+}
+
+.SnackBarWindow{
+    display: flex;     
+    width: 100%;
+    position: fixed;
+    pointer-events: none; 
+    padding: 5px;
+    margin-top: 0;
+    align-items: center;
+    justify-content: center;
+    z-index: 2000;
+}
+
+#snackBar{
+    display: flex;
+    min-width: 250px;
+    width: 200px; 
+    pointer-events: auto;
+    align-items: center;
+    border-radius: 12px;
+    padding: 2px 10px;
+    color: white;
+    background-color: red;   
+}
+
+.IkonicaGreska{
+    width: 25px;
+    height: 25px;
+    background-size: cover;
+    flex-basis: 25px;
+    flex-shrink: 0;
+    margin-right: 10px;
+    background-image: url("../svg ikone/Greska.svg"); 
+}
+
+#snackBar.SnackOK{
+    background-color: #a8e068 !important;
+}
+
+#snackBar.SnackOK .IkonicaGreska{
+    background-image: url("../svg ikone/OK.svg");   
+}
+
+.TekstGreske{    
+    flex: 1;
+    color: white;
+}
+
+#iksIzSnacka{
+    flex-basis: 12px;
+    flex-shrink: 0;
+}
+
+.NeispravanFilter{
+    border:2px solid red !important;
+}
+
+/*responsivno*/
+@media screen and (max-width:1200px){
+    .TreciRedKriterijum_Dodatno{
+        flex-direction: column;
+    }
+    .KontejnerDuguje, .KontejnerVazenjeKartice{
+        width: 100%;        
+        align-items: center;
+        justify-content: center;
+        display: flex;
+        margin: 0;
+        flex-direction: column;      
+    }
+
+    #btnPretrazi, #btnBrisiFiltere, #btnPredefinisaniSetoviFiltera, #btnSnimiSetFiltera, #btnRecentSearces{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: auto !important;
+        margin-right: 5px;
+    }
+    #btnPretrazi p, #btnBrisiFiltere p, #btnPredefinisaniSetoviFiltera p, #btnSnimiSetFiltera p, #btnRecentSearces p{
+        /* flex: none*/
+        margin: 10px;
+        margin-right: 5px;
+    }
+
+    .PrviRedKriterijuma div:nth-child(1){
+        margin-left: -200px;
+        margin-bottom: -70px;
+    }
+}
+@media screen and (max-width:890px){
+    .PrviRedKriterijuma, .DrugiRedKriterijuma,.TreciRedKriterijum_Dodatno, .CetvrtiRedKriterijum_SakrijDodatneFiltere{
+        flex-direction: column;
+        width: 100%;        
+    }    
+
+    .RazdvojnaLinija{
+        border: none;
+        height: 20px;
+    }
+
+    .BoxCheckBoxPeriodVazenjeKartice{
+        width: 480px;        
+    }
+    .PetiRedButtoni > div{
+        flex-direction: column;
+    }
+    #btnPretrazi, #btnBrisiFiltere, #btnPredefinisaniSetoviFiltera, #btnSnimiSetFiltera, #btnRecentSearces{
+        width: 80% !important;
+        border-radius: 5px;
+    }
+    #btnPretrazi >p , #btnBrisiFiltere >p, #btnPredefinisaniSetoviFiltera > p, #btnSnimiSetFiltera >p , #btnRecentSearces >p{
+        flex: none !important;
+    }
+    .BoxCheckBoxeviDuguje, .BoxCheckBoxPeriodVazenjeKartice{
+        width: 100%;
+    }
+}
+@media screen and (max-width:400px){
+
+    .KontejnerModalnogProzora, .KontejnerModalnogProzoraZaSnimanjeFiltera, .KontejnerModalnogProzoraRaspoloziviSetFiltera,.KontejnerModalnogProzoraRecentSearches {
+        width: 98% !important;
+    }
+    .SadrzajTaba{
+        width: 100% !important;
+    }
+    #txtNazivSetaKriterijuma {
+        width: 150px !important;
+    }
+}
